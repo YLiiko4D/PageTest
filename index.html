@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Liczba ogloszeń</th>
+            <th>Cena ogloszeń</th>
+            <th>Bonus</th>
+        </tr>
+        <tr>
+            <td>1-50</td>
+            <td>2 PLN</td>
+            <td rowspan="2">Subskrybcja newslettera to upust 0.20 PLN na ogloszenie</td>
+        </tr>
+        <tr>
+            <td>51 i wiecej</td>
+            <td>1 PLN</td>
+        </tr>
+    </table>
+    
+    <form>
+        <input type="text" value="money" class="money">
+        <input type="checkbox" class="check">
+        <button type="submit" value="oblicz" class="oblicz">Oblicz</button>
+    </form>
+    <section><p>Koszt ogloszeń</p><p class="result"></p><p>PLN</p></section>
+    <script src="main.js"></script>
+</body>
+</html>
